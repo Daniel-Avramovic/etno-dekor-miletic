@@ -1,0 +1,13 @@
+header{
+    .me-auto{
+        margin-right: 0 !important;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    header{
+        .me-auto{
+            display: none;
+        }
+    }
+  }
