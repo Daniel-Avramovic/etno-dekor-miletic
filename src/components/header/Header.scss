@@ -1,13 +1,13 @@
 header{
+    .navbar{
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+        top: 0px;
+        height: 60px;
+    }
     .me-auto{
+        margin-left: auto;
         margin-right: 0 !important;
     }
 }
-
-@media screen and (max-width: 760px) {
-    header{
-        .me-auto{
-            display: none;
-        }
-    }
-  }
