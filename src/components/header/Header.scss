@@ -1,13 +1,30 @@
-header{
-    .navbar{
-        overflow: hidden;
-        position: fixed;
-        width: 100%;
-        top: 0px;
-        height: 60px;
+header {
+  .navbar {
+    background: rgba(136, 93, 0, 0.849) !important;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  .dropdown-toggle{
+      background-color: rgb(145, 94, 0) !important;
+      border: none !important;
+  }
+
+  .me-auto {
+    margin-left: auto;
+    margin-right: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    .me-auto {
+      display: none;
     }
-    .me-auto{
-        margin-left: auto;
-        margin-right: 0 !important;
+    .dropdown {
+      display: unset;
     }
+  }
 }

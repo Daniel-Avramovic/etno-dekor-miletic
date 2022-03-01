@@ -1,10 +1,35 @@
 .productsView {
+  background: url("../../../public/img/background.jpg");
   position: fixed;
-  top: 60px;
+  top: 55px;
   left: 0;
   right: 0;
   bottom: 0;
   overflow-y: scroll;
   padding-top: 10px;
   overflow-x: hidden;
+
+  .card {
+    height: 550px;
+
+    .card-title {
+      font-style: oblique;
+      font-weight: bold;
+    }
+
+    .price {
+      position: absolute;
+      bottom: 50px !important;
+      font-weight: bold;
+    }
+
+    button {
+      position: absolute;
+      bottom: 10px !important;
+    }
+  }
+
+  img {
+    height: 300px;
+  }
 }

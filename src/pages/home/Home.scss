@@ -1,9 +1,36 @@
 .homeView {
   background: url("../../../public/img/background.jpg");
-  background-attachment: fixed;
   position: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   color: white;
   height: 100vh;
   width: 100%;
-  margin-top: 60px;
+
+  div {
+    font-size: 120px;
+    text-align: center;
+    font-style: oblique;
+  }
+}
+
+@media (max-width: 900px) {
+  .homeView{
+    div{
+      font-size: 80px;
+      position: relative;
+      top: 10%;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .homeView{
+    div{
+      font-size: 60px;
+      position: relative;
+      top: 15%;
+    }
+  }
 }

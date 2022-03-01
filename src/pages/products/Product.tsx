@@ -26,14 +26,13 @@ const Products: FC = (): React.ReactElement => {
                 <Card.Img
                   variant="top"
                   src={process.env.PUBLIC_URL + product.img[0]}
-                  style={{ height: "300px" }}
                 />
                 <Card.Body>
                   <Card.Title>{product.name}</Card.Title>
                   <Card.Text>
                     {product.description}
                   </Card.Text>
-                  <Card.Text>
+                  <Card.Text className="price">
                     {product.price}
                   </Card.Text>
                   <Button variant="outline-info">Pogledaj sve slike</Button>
