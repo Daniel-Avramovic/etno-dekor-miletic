@@ -11,13 +11,11 @@ const Products: FC = (): React.ReactElement => {
 
   const getProduct = async () => {
     const data = await getData();
-    console.log(data);
     setProducts(data.product);
   };
 
   useEffect(() => void getProduct(), []);
 
-  console.log(products);
   return (
     <>
       <main className="productsView ops">
@@ -58,7 +56,7 @@ const Products: FC = (): React.ReactElement => {
           })}
         </Row>
       </main>
-      {isOpen && <LigthBox imgs={imgs} setIsOpen={setIsOpen}/>}
+      {isOpen && <LigthBox imgs={imgs} setIsOpen={setIsOpen} />}
     </>
   );
 };

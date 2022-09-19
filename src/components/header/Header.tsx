@@ -12,7 +12,7 @@ const Header: FC = (): React.ReactElement => {
   return (
     <header>
       <Navbar bg="dark" variant="dark">
-          <Navbar.Brand href="#home">Etno Dekor Miletic</Navbar.Brand>
+          <Navbar.Brand href="/">Etno Dekor Miletic</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="/">Početna</Nav.Link>
             <Nav.Link href="/products">Proizvodi</Nav.Link>

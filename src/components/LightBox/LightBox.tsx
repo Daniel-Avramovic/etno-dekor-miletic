@@ -1,4 +1,4 @@
-import { ClockCircleOutlined, CloseCircleOutlined, LeftCircleFilled, LeftCircleOutlined, RightCircleOutlined } from "@ant-design/icons";
+import { CloseCircleOutlined, LeftCircleOutlined, RightCircleOutlined } from "@ant-design/icons";
 import React, { FC, useState } from "react";
 import "./LightBox.scss"
 
