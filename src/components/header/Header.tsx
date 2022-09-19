@@ -12,7 +12,6 @@ const Header: FC = (): React.ReactElement => {
   return (
     <header>
       <Navbar bg="dark" variant="dark">
-        <Container>
           <Navbar.Brand href="#home">Etno Dekor Miletic</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="/">Početna</Nav.Link>
@@ -24,7 +23,6 @@ const Header: FC = (): React.ReactElement => {
             <Dropdown.Item href="/products">Proizvodi</Dropdown.Item>
             <Dropdown.Item href="/aboutUs">O nama</Dropdown.Item>
           </DropdownButton>
-        </Container>
       </Navbar>
     </header>
   );
