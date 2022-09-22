@@ -3,7 +3,7 @@ import React, { FC, useState } from "react";
 import "./LightBox.scss"
 
 interface Props {
-  imgs: any[]
+  imgs: string[]
   setIsOpen: Function
 }
 
@@ -23,7 +23,7 @@ const LigthBox: FC<Props> = ({ imgs, setIsOpen }): React.ReactElement => {
   return (
     <div className="ligth-box">
       <div className="test">
-        <img src={process.env.PUBLIC_URL + imgs[imgPosition]} />
+        <img src={process.env.PUBLIC_URL + imgs[imgPosition]}/>
         <button
           onClick={() => setIsOpen(false)}><CloseCircleOutlined/></button>
 

@@ -4,7 +4,14 @@ import LigthBox from "../../components/LightBox/LightBox";
 import { getData } from "../../services/services";
 import "./Product.scss"
 
-const Products: FC = (): React.ReactElement => {
+interface Products {
+  name: string,
+  img: string[]
+  price: string,
+  description: string
+}
+
+const ProductsPage: FC = (): React.ReactElement => {
   const [products, setProducts] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
   const [imgs, setImgs] = useState([]);
@@ -20,35 +27,34 @@ const Products: FC = (): React.ReactElement => {
     <>
       <main className="productsView ops">
         <Row className="px-4">
-          {products.map((product: any, i: number) => {
-            console.log(product);
+          {products.map(({name, img, description, price}: Products, i: number) => {
             return (
               <Col xxl={3} xl={4} sm={6} xs={12} className="mb-5" key={i}>
                 <Card>
                   <Card.Img
                     variant="top"
-                    src={process.env.PUBLIC_URL + product.img[0]}
+                    src={process.env.PUBLIC_URL + img[0]}
                   />
                   <Card.Body>
-                    <Card.Title>{product.name}</Card.Title>
+                    <Card.Title>{name}</Card.Title>
                     <Card.Text>
-                      {product.description}
+                      {description}
                     </Card.Text>
                     <Card.Text className="price">
-                      {product.price}
+                      {price}
                     </Card.Text>
                     <Button
                       variant="outline-info"
                       onClick={() => {
                         const tempImg: any = [];
-                        product.img.forEach((img: string) => {
+                        img.forEach((img: string) => {
                           tempImg.push(process.env.PUBLIC_URL + img)
                         });
                         setIsOpen(true)
                         setImgs(tempImg)
                       }}
 
-                    >Pogledaj sve slike</Button>
+                    >Pogledaj sve slike ({img.length})</Button>
                   </Card.Body>
                 </Card>
               </Col>
@@ -61,4 +67,4 @@ const Products: FC = (): React.ReactElement => {
   );
 };
 
-export default Products;
+export default ProductsPage;
