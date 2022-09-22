@@ -10,9 +10,10 @@
         "/img/barskisto3.jpg",
         "/img/barskisto4.jpg",
         "/img/barskisto5.jpg",
-        "/img/barskisto6.jpg"
+        "/img/barskisto6.jpg",
+        "/img/barskisto7.jpg"
       ],
-      "price": "Cena 25000 din, Sto 9000 din, Stolica 4000 din",
+      "price": "Cena 30000 din, Sto 10000 din, Stolica 5000 din",
       "description": "Radjeno od starih drvenih burića, sedište bukva Prečnik stola od 50cm do 60cm, visina 107cm. Visina stolica 72cm. Mogućnost kupovine po komadu."
     },
     {
@@ -27,7 +28,10 @@
     },
     {
       "name": "Police za vino",
-      "img": ["/img/policaZaVino.jpg", "/img/policaZaVino1.jpg"],
+      "img": [
+        "/img/policaZaVino.jpg",
+        "/img/policaZaVino1.jpg"
+      ],
       "price": "Cena 18000 din",
       "description": "Drvo bukva, širina 80cm, dubina 30cm, visina 180cm."
     },
@@ -44,7 +48,9 @@
     },
     {
       "name": "Zidna polica za vino sa vrengijom ",
-      "img": ["/img/zidnaPolicaZaVinoSaVrengijom.jpg"],
+      "img": [
+        "/img/zidnaPolicaZaVinoSaVrengijom.jpg"
+      ],
       "price": "Cena 2400 din",
       "description": "Širina 20cm, visina 90cm, dubina 12cm. Boja po želji kupca"
     },
@@ -63,23 +69,25 @@
     {
       "name": "Polica za vino(Model 2)",
       "img": [
-        "/img/policaZaVino-model2.jpg",
-        "/img/policaZaVino-model2-1.jpg",
-        "/img/policaZaVino-model2-2.jpg",
-        "/img/policaZaVino-model2-3.jpg"
+        "/img/policaZaVino-model2.jpg"
       ],
       "price": "Cena 6000 din",
       "description": "Duge od bureta. Širina 62cm, dubina 20cm, visina 90cm"
     },
     {
       "name": "Polica za vino (20 flaša)",
-      "img": ["/img/policaZaVino-model3.jpg"],
+      "img": [
+        "/img/policaZaVino-model3.jpg"
+      ],
       "price": "Cena 15000 din",
       "description": "Duge bureta u kobinacijom sa jelom. Širina 70cm, visina 70cm, dubina 25cm"
     },
     {
       "name": "Polica za vino model Krug",
-      "img": ["/img/policaZaVino-model4.jpg", "/img/policaZaVino-model4-1.jpg"],
+      "img": [
+        "/img/policaZaVino-model4.jpg",
+        "/img/policaZaVino-model4-1.jpg"
+      ],
       "price": "Cena 7000 din",
       "description": "Drveni burići i drvo jela. Prečnik oko 50cm (u zavisnosti od bureta), dubina 25cm/30cm"
     },
@@ -97,33 +105,70 @@
     },
     {
       "name": "Garnitura King: Komplet sto, 1 klupa i 4 stolice",
-      "img": ["/img/garnituraKing.jpg", "/img/garnituraKing1.jpg"],
+      "img": [
+        "/img/garnituraKing.jpg",
+        "/img/garnituraKing1.jpg"
+      ],
       "price": "Cena 93.900 din",
       "description": "Duge bureta i drvo bukva. Sto 80cm*120cm cena 14.080 din, stolica komad 15.250 din, klupa komad 18.800 din"
     },
     {
       "name": "Zidni civiluk ",
-      "img": ["/img/zidniCiviluk.jpg"],
+      "img": [
+        "/img/zidniCiviluk.jpg"
+      ],
       "price": "Cena 3500 din",
       "description": "Drveni krugovi u kombinaciji sa jelom. Dimenzije 25cm*70cm"
     },
     {
       "name": "Krevet sa fiokama",
-      "img": ["/img/krevet.jpg", "/img/krevet1.jpg"],
+      "img": [
+        "/img/krevet.jpg",
+        "/img/krevet1.jpg"
+      ],
       "price": "Cena 117.300 din (cena je bez duseka)",
       "description": "Drveni trupci/grane, i drvo jela. Za dušek 140cm*200cm."
     },
     {
+      "name": "Krevet od greda",
+      "img": [
+        "/img/krevetOdGreda.jpg",
+        "/img/krevetOdGreda1.jpg",
+        "/img/krevetOdGreda2.jpg",
+        "/img/krevetOdGreda3.jpg",
+        "/img/krevetOdGreda4.jpg"
+      ],
+      "price": "80.000 din (cena je bez duseka)",
+      "description": "Moguća izrada u dimenzijama po želji kupca. Dimenzije 180cm*200cm."
+    },
+    {
       "name": "Zidni šank sa rasklopivim stolom",
-      "img": ["/img/zidniSank1.jpg", "/img/zidniSank.jpg"],
+      "img": [
+        "/img/zidniSank1.jpg",
+        "/img/zidniSank.jpg"
+      ],
       "price": "Cena 10000 din",
       "description": "Drvo jela. Širina 55cm, visina 90cm, dubina 13cm."
     },
     {
       "name": "Klub sto",
-      "img": ["/img/klubSto.jpg"],
+      "img": [
+        "/img/klubSto.jpg"
+      ],
       "price": "Cena 6000 din",
       "description": "Drvo jela/metalne noge. Ploča stola 60cm, visina 45cm. Boja po zelji."
+    },
+    {
+      "name": "Klub sto od panja",
+      "img": [
+        "/img/klubStoOdPanja.jpg",
+        "/img/klubStoOdPanja1.jpg",
+        "/img/klubStoOdPanja2.jpg",
+        "/img/klubStoOdPanja3.jpg",
+        "/img/klubStoOdPanja4.jpg"
+      ],
+      "price": "Cena 8000 din",
+      "description": "Drvo bagrem. Visina 45cm, dužina 45cm, širina 30cm. Svaki što je različit zbog samog oblika panja!"
     },
     {
       "name": "Cipelarnik/čiviluk",
@@ -172,7 +217,9 @@
     },
     {
       "name": "Barska stolica bez naslona",
-      "img": ["/img/barskaStolicaBezNaslona.jpg"],
+      "img": [
+        "/img/barskaStolicaBezNaslona.jpg"
+      ],
       "price": "Cena 3000 din",
       "description": "Visina 72cm, sedište 35cm*35cm. Boja po želji kupca."
     },
@@ -201,7 +248,9 @@
     },
     {
       "name": "Klub stocici: set 3 komada",
-      "img": ["/img/klubStocici.jpg"],
+      "img": [
+        "/img/klubStocici.jpg"
+      ],
       "price": "Cena 13000 din",
       "description": "Medijapan farbani/metalne noge. Dimenzije po prečniku 30cm/40cm/50cm."
     },
@@ -219,7 +268,9 @@
     },
     {
       "name": "Kucica za pse",
-      "img": ["/img/kucicaZaPse.jpg"],
+      "img": [
+        "/img/kucicaZaPse.jpg"
+      ],
       "price": "Cena 9000 din",
       "description": "Drvo jela/tegola. Dužina 60cm, visina 60cm, dubina 50cm."
     },
@@ -265,15 +316,90 @@
     },
     {
       "name": "Ogledalo bure",
-      "img": ["/img/ogledaloBure.jpg", "/img/ogledaloBure1.jpg"],
+      "img": [
+        "/img/ogledaloBure.jpg",
+        "/img/ogledaloBure1.jpg"
+      ],
       "price": "Cena 3500 din",
       "description": "Prečnika od 30cm do 40 cm."
     },
     {
+      "name": "Ogledalo Rustik (model 1)",
+      "img": [
+        "/img/ogledaloRustikFirstModel.jpg",
+        "/img/ogledaloRustikFirstModel1.jpg",
+        "/img/ogledaloRustikFirstModel2.jpg",
+        "/img/ogledaloRustikFirstModel3.jpg",
+        "/img/ogledaloRustikFirstModel5.jpg",
+        "/img/ogledaloRustikFirstModel4.jpg",
+        "/img/ogledaloRustikFirstModel6.jpg"
+      ],
+      "price": "Cena 12000 din",
+      "description": "Puno drvo radjeno od bagrema. Dimenzije 56cm dužina, 44cm širina."
+    },
+    {
+      "name": "Ogledalo Rustik (model 2)",
+      "img": [
+        "/img/ogledaloRustikSecondModel.jpg",
+        "/img/ogledaloRustikSecondModel1.jpg",
+        "/img/ogledaloRustikSecondModel2.jpg",
+        "/img/ogledaloRustikSecondModel3.jpg",
+        "/img/ogledaloRustikSecondModel4.jpg"
+      ],
+      "price": "Cena 8000 din",
+      "description": "Puno drvo radjeno od bagrema. Dimenzije 45cm dužina, 35cm širina."
+    },
+    {
+      "name": "Ogledalo Rustik (model 3)",
+      "img": [
+        "/img/ogledaloRustikThirdModel.jpg",
+        "/img/ogledaloRustikThirdModel1.jpg",
+        "/img/ogledaloRustikThirdModel2.jpg",
+        "/img/ogledaloRustikThirdModel3.jpg",
+        "/img/ogledaloRustikThirdModel4.jpg"
+      ],
+      "price": "Cena 20.000 din",
+      "description": "Puno drvo radjeno od bagrema.  180cm visina, 80cm širina."
+    },
+    {
       "name": "Komoda za hodnik",
-      "img": ["/img/komodaZaHodink.jpg", "/img/komodaZaHodink1.jpg"],
+      "img": [
+        "/img/komodaZaHodink.jpg",
+        "/img/komodaZaHodink1.jpg"
+      ],
       "price": "Cena 14000 din",
       "description": "Drvo bukva. Dužina 1m, visina 80cm. Boja po želji kupca."
+    },
+    {
+      "name": "Komoda belo-zlatna",
+      "img": [
+        "/img/komodaBeloZlatna.jpg",
+        "/img/komodaBeloZlatna1.jpg",
+        "/img/komodaBeloZlatna2.jpg",
+        "/img/komodaBeloZlatna3.jpg",
+        "/img/komodaBeloZlatna4.jpg",
+        "/img/komodaBeloZlatna5.jpg",
+        "/img/komodaBeloZlatna6.jpg",
+        "/img/komodaBeloZlatna7.jpg",
+        "/img/komodaBeloZlatna8.jpg",
+        "/img/komodaBeloZlatna9.jpg"
+      ],
+      "price": "Cena 15.000 din",
+      "description": "Drvo bukva. Dužina 1m, visina 80cm, 35cm širina."
+    },
+    {
+      "name": "Stalak od duga za 10 flaša",
+      "img": [
+        "/img/stalakOdDuga.jpg",
+        "/img/stalakOdDuga1.jpg",
+        "/img/stalakOdDuga2.jpg",
+        "/img/stalakOdDuga3.jpg",
+        "/img/stalakOdDuga4.jpg",
+        "/img/stalakOdDuga5.jpg",
+        "/img/stalakOdDuga6.jpg"
+      ],
+      "price": "Cena 8.000 din",
+      "description": "Visina od 120cm do 80cm."
     }
   ]
 }
