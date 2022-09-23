@@ -1,4 +1,4 @@
-.ligth-box {
+.ligth-box-container {
     width: 100%;
     height: 100vh;
     margin-top: 55px;
@@ -6,7 +6,7 @@
     position: fixed;
     top: 0;
 
-    .test {
+    .light-box-content {
         position: relative;
         top: 5%;
         left: 25%;
@@ -55,8 +55,8 @@
 }
 
 @media (max-width: 1400px) {
-    .ligth-box {
-        .test {
+    .ligth-box-container {
+        .ligth-box-conttent {
             left: 20%;
             width: 60%;
         }
@@ -64,8 +64,8 @@
 }
 
 @media (max-width: 768px) {
-    .ligth-box {
-        .test {
+    .ligth-box-container {
+        .ligth-box-conttent {
             left: 10%;
             width: 80%;
         }

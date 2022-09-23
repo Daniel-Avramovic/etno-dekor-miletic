@@ -2,7 +2,6 @@ import React, { useState, Fragment, FC } from "react";
 import Header from "./components/header/Header";
 import Home from "./pages/home/Home";
 import ProductsPage from "./pages/products/Product"
-import AboutUs from "./pages/aboutUs/AboutUs";
 import { Route, Routes } from "react-router-dom";
 import "./App.scss";
 
@@ -19,7 +18,6 @@ const App: FC = (): React.ReactElement => {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="products" element={<ProductsPage/>} />
-        <Route path="aboutUs" element={<AboutUs/>} />
       </Routes>
     </Fragment>
   );

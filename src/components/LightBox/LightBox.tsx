@@ -7,33 +7,38 @@ interface Props {
   setIsOpen: Function
 }
 
+enum Direction {
+  NEXT = "next",
+  PREV = "prev"
+}
+
 const LigthBox: FC<Props> = ({ imgs, setIsOpen }): React.ReactElement => {
 
   const [imgPosition, setImgPostion] = useState(0);
 
   const onChangeImg = (direction: string): void => {
-    if (direction === "next") {
+    if (direction === Direction.NEXT) {
       setImgPostion(imgPosition + 1)
-    } if (direction === "prev") {
+    } if (direction === Direction.PREV) {
       setImgPostion(imgPosition - 1)
     }
   }
 
 
   return (
-    <div className="ligth-box">
-      <div className="test">
+    <div className="ligth-box-container">
+      <div className="light-box-content">
         <img src={process.env.PUBLIC_URL + imgs[imgPosition]}/>
         <button
           onClick={() => setIsOpen(false)}><CloseCircleOutlined/></button>
 
         <button
           disabled={imgPosition === imgs.length  - 1}
-          onClick={() => onChangeImg("next")}><RightCircleOutlined/></button>
+          onClick={() => onChangeImg(Direction.NEXT)}><RightCircleOutlined/></button>
 
         <button
           disabled={imgPosition === 0}
-          onClick={() => onChangeImg("prev")}><LeftCircleOutlined/></button>
+          onClick={() => onChangeImg(Direction.NEXT)}><LeftCircleOutlined/></button>
       </div>
     </div>
   );

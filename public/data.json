@@ -75,23 +75,6 @@
       "description": "Duge od bureta. Širina 62cm, dubina 20cm, visina 90cm"
     },
     {
-      "name": "Polica za vino (20 flaša)",
-      "img": [
-        "/img/policaZaVino-model3.jpg"
-      ],
-      "price": "Cena 15000 din",
-      "description": "Duge bureta u kobinacijom sa jelom. Širina 70cm, visina 70cm, dubina 25cm"
-    },
-    {
-      "name": "Polica za vino model Krug",
-      "img": [
-        "/img/policaZaVino-model4.jpg",
-        "/img/policaZaVino-model4-1.jpg"
-      ],
-      "price": "Cena 7000 din",
-      "description": "Drveni burići i drvo jela. Prečnik oko 50cm (u zavisnosti od bureta), dubina 25cm/30cm"
-    },
-    {
       "name": "Trpezarijski sto",
       "img": [
         "/img/trpezarijskiSto.jpg",
@@ -104,27 +87,9 @@
       "description": "Drveno bure u kombinaciji sa bukvom. Ploča stola 160cm, bez ploče 140cm, visina 76cm"
     },
     {
-      "name": "Garnitura King: Komplet sto, 1 klupa i 4 stolice",
-      "img": [
-        "/img/garnituraKing.jpg",
-        "/img/garnituraKing1.jpg"
-      ],
-      "price": "Cena 93.900 din",
-      "description": "Duge bureta i drvo bukva. Sto 80cm*120cm cena 14.080 din, stolica komad 15.250 din, klupa komad 18.800 din"
-    },
-    {
-      "name": "Zidni civiluk ",
-      "img": [
-        "/img/zidniCiviluk.jpg"
-      ],
-      "price": "Cena 3500 din",
-      "description": "Drveni krugovi u kombinaciji sa jelom. Dimenzije 25cm*70cm"
-    },
-    {
       "name": "Krevet sa fiokama",
       "img": [
-        "/img/krevet.jpg",
-        "/img/krevet1.jpg"
+        "/img/krevet.jpg"
       ],
       "price": "Cena 117.300 din (cena je bez duseka)",
       "description": "Drveni trupci/grane, i drvo jela. Za dušek 140cm*200cm."
@@ -149,14 +114,6 @@
       ],
       "price": "Cena 10000 din",
       "description": "Drvo jela. Širina 55cm, visina 90cm, dubina 13cm."
-    },
-    {
-      "name": "Klub sto",
-      "img": [
-        "/img/klubSto.jpg"
-      ],
-      "price": "Cena 6000 din",
-      "description": "Drvo jela/metalne noge. Ploča stola 60cm, visina 45cm. Boja po zelji."
     },
     {
       "name": "Klub sto od panja",
