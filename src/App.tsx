@@ -2,6 +2,7 @@ import React, { useState, Fragment, FC } from "react";
 import Header from "./components/header/Header";
 import Home from "./pages/home/Home";
 import ProductsPage from "./pages/products/Product"
+import Footer from "./components/footer/Footer";
 import { Route, Routes } from "react-router-dom";
 import "./App.scss";
 
@@ -14,11 +15,12 @@ const App: FC = (): React.ReactElement => {
   // console.log(img)
   return (
     <Fragment>
-      <Header />
+      <Header/>
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="products" element={<ProductsPage/>} />
       </Routes>
+      <Footer/>
     </Fragment>
   );
 };

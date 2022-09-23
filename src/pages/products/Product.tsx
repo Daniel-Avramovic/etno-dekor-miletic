@@ -15,6 +15,7 @@ const ProductsPage: FC = (): React.ReactElement => {
   const [products, setProducts] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
   const [imgs, setImgs] = useState([]);
+  const [productName, setProductName] = useState("");
 
   const getProduct = async () => {
     const data = await getData();
@@ -29,7 +30,7 @@ const ProductsPage: FC = (): React.ReactElement => {
         <Row className="px-4">
           {products.map(({name, img, description, price}: Products, i: number) => {
             return (
-              <Col xxl={3} xl={4} sm={6} xs={12} className="mb-5" key={i}>
+              <Col xxl={3} xl={4} sm={6} xs={12} className="mb-4" key={i}>
                 <Card>
                   <Card.Img
                     variant="top"
@@ -50,6 +51,7 @@ const ProductsPage: FC = (): React.ReactElement => {
                         img.forEach((img: string) => {
                           tempImg.push(process.env.PUBLIC_URL + img)
                         });
+                        setProductName(name)
                         setIsOpen(true)
                         setImgs(tempImg)
                       }}
@@ -62,7 +64,7 @@ const ProductsPage: FC = (): React.ReactElement => {
           })}
         </Row>
       </main>
-      {isOpen && <LigthBox imgs={imgs} setIsOpen={setIsOpen} />}
+      {isOpen && <LigthBox imgs={imgs} setIsOpen={setIsOpen} name={productName} />}
     </>
   );
 };

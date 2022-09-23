@@ -1,0 +1,45 @@
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 50px;
+    font-size: 20px;
+    z-index: 2;
+    background-color: rgba(136, 93, 0);
+
+    .anticon {
+        svg {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .anticon-facebook {
+        margin-right: 10px;
+    }
+
+    a {
+        color: unset;
+        text-decoration: unset;
+
+        &:hover {
+            color: unset;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        font-size: 14px;
+        .anticon {
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}

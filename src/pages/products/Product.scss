@@ -8,6 +8,7 @@
   overflow-y: scroll;
   padding-top: 10px;
   overflow-x: hidden;
+  margin-bottom: 35px;
 
   .card {
     height: 550px;
@@ -31,5 +32,23 @@
 
   img {
     height: 300px;
+  }
+
+  .btn-outline-info {
+    color:  rgba(136, 93, 0);
+    border-color:  rgba(136, 93, 0);
+
+    &:hover {
+      background-color: rgba(119, 88, 1, 0.493);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .productsView {
+    margin-bottom: 25px;
+    img {
+      height: 270px;
+    }
   }
 }
