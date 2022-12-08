@@ -1,7 +1,7 @@
 import React, { FC, useEffect, useState } from "react";
 import { Button, Card, Row, Col } from "react-bootstrap";
 import LigthBox from "../../components/LightBox/LightBox";
-import LoadingBar from "../../components/LoadingBar/LoadingBar";
+import LoadingSpiner from "../../components/LoadingSpiner/LoadingSpiner";
 import { getData } from "../../services/services";
 import "./Product.scss"
 
@@ -13,11 +13,11 @@ interface Products {
 }
 
 const ProductsPage: FC = (): React.ReactElement => {
-  const [products, setProducts] = useState([]);
-  const [isOpen, setIsOpen] = useState(false);
-  const [imgs, setImgs] = useState([]);
-  const [productName, setProductName] = useState("");
-  const [isLoading, setIsLoading] = useState(true)
+  const [products, setProducts] = useState<Products[]>([]);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [imgs, setImgs] = useState<string[]>([]);
+  const [productName, setProductName] = useState<string>("");
+  const [isLoading, setIsLoading] = useState<boolean>(true)
 
   const getProduct = () => {
     const promise = getData();
@@ -28,9 +28,9 @@ const ProductsPage: FC = (): React.ReactElement => {
 
   return (
     <>
-      <main className="productsView ops">
+      <main className="productsView">
         <Row className="px-4">
-          {isLoading ? <LoadingBar/> : products.map(({ name, img, description, price }: Products, i: number) => {
+          {isLoading ? <LoadingSpiner/> : products.map(({ name, img, description, price }: Products, i: number) => {
             return (
               <Col xxl={3} xl={4} sm={6} xs={12} className="mb-4" key={i}>
                 <Card>
@@ -49,9 +49,8 @@ const ProductsPage: FC = (): React.ReactElement => {
                     <Button
                       variant="outline-info"
                       onClick={() => {
-                        const tempImg: any = [];
+                        const tempImg: string[] = [];
                         img.forEach((img: string) => {
-                          console.log(typeof process.env.PUBLIC_URL)
                           tempImg.push(process.env.PUBLIC_URL + img)
                         });
                         setProductName(name)
