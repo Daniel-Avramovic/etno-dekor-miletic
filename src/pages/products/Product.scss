@@ -35,8 +35,8 @@
   }
 
   .btn-outline-info {
-    color:  rgba(136, 93, 0);
-    border-color:  rgba(136, 93, 0);
+    color: rgba(136, 93, 0);
+    border-color: rgba(136, 93, 0);
 
     &:hover {
       background-color: rgba(119, 88, 1, 0.493);
@@ -47,6 +47,7 @@
 @media (max-width: 768px) {
   .productsView {
     margin-bottom: 25px;
+
     img {
       height: 270px;
     }

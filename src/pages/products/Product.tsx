@@ -1,6 +1,7 @@
 import React, { FC, useEffect, useState } from "react";
 import { Button, Card, Row, Col } from "react-bootstrap";
 import LigthBox from "../../components/LightBox/LightBox";
+import LoadingBar from "../../components/LoadingBar/LoadingBar";
 import { getData } from "../../services/services";
 import "./Product.scss"
 
@@ -16,10 +17,11 @@ const ProductsPage: FC = (): React.ReactElement => {
   const [isOpen, setIsOpen] = useState(false);
   const [imgs, setImgs] = useState([]);
   const [productName, setProductName] = useState("");
+  const [isLoading, setIsLoading] = useState(true)
 
-  const getProduct = async () => {
-    const data = await getData();
-    setProducts(data.product);
+  const getProduct = () => {
+    const promise = getData();
+    promise.then((data: any) => setProducts(data.product)).finally(() => setIsLoading(false))
   };
 
   useEffect(() => void getProduct(), []);
@@ -28,7 +30,7 @@ const ProductsPage: FC = (): React.ReactElement => {
     <>
       <main className="productsView ops">
         <Row className="px-4">
-          {products.map(({name, img, description, price}: Products, i: number) => {
+          {isLoading ? <LoadingBar/> : products.map(({ name, img, description, price }: Products, i: number) => {
             return (
               <Col xxl={3} xl={4} sm={6} xs={12} className="mb-4" key={i}>
                 <Card>
@@ -49,11 +51,12 @@ const ProductsPage: FC = (): React.ReactElement => {
                       onClick={() => {
                         const tempImg: any = [];
                         img.forEach((img: string) => {
+                          console.log(typeof process.env.PUBLIC_URL)
                           tempImg.push(process.env.PUBLIC_URL + img)
                         });
                         setProductName(name)
-                        setIsOpen(true)
                         setImgs(tempImg)
+                        setIsOpen(true)
                       }}
 
                     >Pogledaj sve slike ({img.length})</Button>
