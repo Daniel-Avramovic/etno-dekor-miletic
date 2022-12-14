@@ -5,6 +5,8 @@ import {
   DropdownButton,
   Dropdown,
 } from "react-bootstrap";
+
+import { Link } from 'react-router-dom'
 import "./Header.scss";
 
 const Header: FC = (): React.ReactElement => {
@@ -13,8 +15,8 @@ const Header: FC = (): React.ReactElement => {
       <Navbar bg="dark" variant="dark">
           <Navbar.Brand href="/">Etno Dekor Miletic</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="/">Početna</Nav.Link>
-            <Nav.Link href="/products">Proizvodi</Nav.Link>
+            <Link to="/">Početna</Link>
+            <Link to="/products">Proizvodi</Link>
           </Nav>
           <DropdownButton id="dropdown-basic-button" title="Menu">
             <Dropdown.Item href="/">Početna</Dropdown.Item>
